@@ -14,7 +14,27 @@
 ### 1.4 docker换原
  	sudo vim /etc/docker/daemon.json
 
-### 1.5重启docker
+### 1.5 好用的国内源
+	{
+	"registry-mirrors": [
+		"https://docker.registry.cyou",
+		"https://docker-cf.registry.cyou",
+		"https://dockercf.jsdelivr.fyi",
+		"https://docker.jsdelivr.fyi",
+		"https://dockertest.jsdelivr.fyi",
+		"https://mirror.aliyuncs.com",
+		"https://dockerproxy.com",
+		"https://mirror.baidubce.com",
+		"https://docker.m.daocloud.io",
+		"https://docker.nju.edu.cn",
+		"https://docker.mirrors.sjtug.sjtu.edu.cn",
+		"https://docker.mirrors.ustc.edu.cn",
+		"https://mirror.iscas.ac.cn",
+		"https://docker.rainbond.cc"
+	]
+	}
+	
+### 1.6 重启docker
 	sudo service docker restart
 
 ## 2. docker基础命令
